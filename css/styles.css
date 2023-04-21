@@ -567,9 +567,6 @@ body {
 }
 
 .footer-form {
-}
-
-.container-label {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -580,6 +577,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-right: 24px;
 }
 
 .footer-input {
@@ -593,7 +591,6 @@ body {
   color: var(--background-color);
   outline: transparent;
   background: var(--footer-background-color);
-  margin-right: 24px;
   padding-left: 16px;
 }
 
@@ -603,12 +600,6 @@ body {
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--background-color);
-}
-
-.container-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-button {
@@ -784,7 +775,7 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -792,6 +783,9 @@ body {
 }
 
 .button-modal {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -828,7 +822,6 @@ body {
 }
 
 .modal-title {
-  padding-top: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -850,16 +843,18 @@ body {
 
 .input-wrap {
   position: relative;
+  display: block;
 }
 
-.span-name {
+/* .span-name {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
-}
+  display: block;
+} */
 
 .span-label {
   font-weight: 400;
@@ -868,6 +863,7 @@ body {
   letter-spacing: 0.01em;
   color: #8e8f99;
   margin-bottom: 4px;
+  display: block;
 }
 
 .modal-input {
@@ -894,20 +890,24 @@ body {
   position: absolute;
   left: 19px;
   top: 50%;
+  fill: #2e2f42;
   transform: translateY(-50%);
+}
+
+.modal-label-textarea {
+  display: block;
+  margin-bottom: 16px;
 }
 
 .modal-textarea {
   width: 360px;
   height: 120px;
-  left: 0px;
-  top: 216px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-bottom: 16px;
+  display: block;
   outline: transparent;
   transition: border-color var(--typical-transition);
   resize: none;
